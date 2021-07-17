@@ -1,0 +1,24 @@
+{
+  "name": "David Hargitai",
+  "short_name": "davidhargitai.com",
+  "description": "On a copywriter's journey.",
+  "icons": [
+    {
+      "src": "/static/favicons/favicon-196x196.png",
+      "sizes": "196x196",
+      "type": "image/png"
+    },
+    {
+      "src": "/static/favicons/favicon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
+  "display": "standalone",
+  "dir": "ltr",
+  "lang": "en-US",
+  "orientation": "portrait-primary",
+  "start_url": "../../index.html"
+}
