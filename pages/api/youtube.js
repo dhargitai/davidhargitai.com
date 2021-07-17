@@ -1,4 +1,4 @@
-import { google } from 'googleapis';
+/* import { google } from 'googleapis';
 
 import googleAuth from '@/lib/google/auth';
 
@@ -27,3 +27,4 @@ export default async function handler(_, res) {
     viewCount
   });
 }
+ */
