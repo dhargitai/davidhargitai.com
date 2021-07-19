@@ -42,7 +42,37 @@ export default function About() {
           About Me
         </h1>
         <div className="mb-8 prose leading-6 text-gray-600 dark:text-gray-400">
-          <p>Hey, I’m David...</p>
+          <p>Hey, I’m David.</p>
+          <p>
+            ATM I'm working as a frontend engineer, but my other passion is
+            digital/content marketing, and copywriting.
+          </p>
+          <p>
+            From the first time I heard about what a great copywriter can
+            achieve, I knew that I want to be one of them one day.
+          </p>
+          <p>
+            First I learned everything I could access from Gary Halbert, then
+            from other great names like Gene Schwartz, John Caples, Ben Settle,
+            Mike Shreeve and some other great people.
+          </p>
+          <p>
+            For a few years I haven't done anything, but not long ago I decided
+            to start my copywriting journey and I'll practice my craft (almost)
+            every day.
+          </p>
+          <p>
+            This website is my playground for this. I send tips and tricks in
+            daily emails, you can follow them if you subscribe to my list below.
+          </p>
+          <p>
+            If you want me to help you with your sales copy or marketing emails,
+            here you can book a quick 15m chat with me and we can see if I can
+            help you:{' '}
+            <a href="https://davidharigtai.com/discovery-call">
+              davidharigtai.com/discovery-call
+            </a>
+          </p>
         </div>
       </div>
     </Container>
