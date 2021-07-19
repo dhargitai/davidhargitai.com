@@ -2,3 +2,8 @@
   from = "/discovery-call"
   to = "https://calendly.com/davidhargitai/discovery"
   status = 301
+
+[[redirects]]
+  from = "/groove-crm"
+  to = "https://groovepages.groovesell.com/a/kDj373jv4YUs"
+  status = 301
