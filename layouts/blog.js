@@ -37,7 +37,13 @@ export default function BlogLayout({ children, frontMatter }) {
             <p className="text-sm text-gray-700 dark:text-gray-300 ml-2">
               {frontMatter.by}
               {'David Hargitai / '}
-              {format(parseISO(frontMatter.publishedAt), 'MMMM dd, yyyy')}
+              <time
+                className="entry-time"
+                dateTime={new Date(frontMatter.publishedAt).toISOString()}
+                itemProp="dateModified"
+              >
+                {format(parseISO(frontMatter.publishedAt), 'MMMM dd, yyyy')}
+              </time>
             </p>
           </div>
           <p className="text-sm text-gray-500 min-w-32 mt-2 md:mt-0">
