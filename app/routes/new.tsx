@@ -454,11 +454,11 @@ export default function New() {
                       <div role="listitem" className="box-border">
                         <a href="#" className="inline-block overflow-visible max-w-full bg-white rounded-none cursor-pointer box-border hover:text-slate-500" style={{transition: 'color 300ms ease 0s', textDecoration: 'none'}}>
                           <div className="overflow-hidden relative mb-12 h-auto rounded-3xl" style={{transform: 'translate(0px, 0px)'}}>
-                            <img src="" alt="" className="inline-block object-cover w-full max-w-full h-full align-middle border-0 box-border" />
+                            <img src="https://assets.website-files.com/61129bb2ecedf8658b4c6911/6112cd9d5b27385cbcd7218d_portfolio-1-featured-image-personal-x-template.jpg" alt="" className="inline-block object-cover w-full max-w-full h-full align-middle border-0 box-border" />
                           </div>
                           <div className="box-border">
-                            <h3 className="mt-0 mb-4 text-2xl font-bold leading-5 text-slate-900" />
-                            <p className="mt-0 mb-8 box-border" />
+                            <h3 className="mt-0 mb-4 text-2xl font-bold leading-5 text-slate-900">My last app redesign project</h3>
+                            <p className="mt-0 mb-8 box-border">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lectus mattis nunc aliquam tincidunt est non dolor sit consectuetur do.</p>
                             <div className="flex items-center font-bold leading-4 box-border text-slate-900">
                               <div className="box-border">Read case study</div>
                               <img src="/images/arrow-personal-x-template.svg" loading="eager" alt="" className="inline-block mt-px ml-2 w-4 max-w-full align-middle border-0 box-border" />
@@ -467,9 +467,9 @@ export default function New() {
                         </a>
                       </div>
                     </div>
-                    <div className="flex-col p-5 my-5 text-gray-600 bg-white border border-solid border-zinc-200" style={{borderRadius: '18px'}}>
+                    {/* <div className="flex-col p-5 my-5 text-gray-600 bg-white border border-solid border-zinc-200" style={{borderRadius: '18px'}}>
                       <div className="box-border">No items found.</div>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
                 <div className="inline-block relative mr-8 w-full h-full text-left align-top whitespace-normal opacity-100 box-border" aria-label="2 of 12" role="group" aria-hidden="true" style={{transform: 'translateX(0px)', opacity: 1}}>
@@ -478,11 +478,11 @@ export default function New() {
                       <div role="listitem" className="box-border" aria-hidden="true">
                         <a href="#" className="inline-block overflow-visible max-w-full bg-white rounded-none cursor-pointer box-border hover:text-slate-500" tabIndex={-1} aria-hidden="true" style={{transition: 'color 300ms ease 0s', textDecoration: 'none'}}>
                           <div className="overflow-hidden relative mb-12 h-auto rounded-3xl" aria-hidden="true" style={{transform: 'translate(0px, 0px)'}}>
-                            <img src="" alt="" className="inline-block object-cover w-full max-w-full h-full align-middle border-0 box-border" aria-hidden="true" />
+                            <img src="https://assets.website-files.com/61129bb2ecedf8658b4c6911/6112cc8b235a8e05a257f734_portfolio-3-featured-image-personal-x-template.jpg" alt="" className="inline-block object-cover w-full max-w-full h-full align-middle border-0 box-border" aria-hidden="true" />
                           </div>
                           <div className="box-border" aria-hidden="true">
-                            <h3 className="mt-0 mb-4 text-2xl font-bold leading-5 text-slate-900" aria-hidden="true" />
-                            <p className="mt-0 mb-8 box-border" aria-hidden="true" />
+                          <h3 className="mt-0 mb-4 text-2xl font-bold leading-5 text-slate-900">My last app redesign project</h3>
+                            <p className="mt-0 mb-8 box-border">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lectus mattis nunc aliquam tincidunt est non dolor sit consectuetur do.</p>
                             <div className="flex items-center font-bold leading-4 box-border text-slate-900" aria-hidden="true">
                               <div aria-hidden="true" className="box-border">
                                 Read case study
@@ -493,9 +493,6 @@ export default function New() {
                         </a>
                       </div>
                     </div>
-                    <div className="flex-col p-5 my-5 text-gray-600 bg-white border border-solid border-zinc-200" aria-hidden="true" style={{borderRadius: '18px'}}>
-                      <div aria-hidden="true" className="box-border">No items found.</div>
-                    </div>
                   </div>
                 </div>
                 <div className="inline-block relative mr-8 w-full h-full text-left align-top whitespace-normal opacity-100 box-border" aria-label="3 of 12" role="group" aria-hidden="true" style={{transform: 'translateX(0px)', opacity: 1}}>
@@ -504,11 +501,11 @@ export default function New() {
                       <div role="listitem" className="box-border" aria-hidden="true">
                         <a href="#" className="inline-block overflow-visible max-w-full bg-white rounded-none cursor-pointer box-border hover:text-slate-500" tabIndex={-1} aria-hidden="true" style={{transition: 'color 300ms ease 0s', textDecoration: 'none'}}>
                           <div className="overflow-hidden relative mb-12 h-auto rounded-3xl" aria-hidden="true" style={{transform: 'translate(0px, 0px)'}}>
-                            <img src="" alt="" className="inline-block object-cover w-full max-w-full h-full align-middle border-0 box-border" aria-hidden="true" />
+                            <img src="https://assets.website-files.com/61129bb2ecedf8658b4c6911/6112cca34f769f7534c0c044_portfolio-2-featured-image-personal-x-template.jpg" alt="" className="inline-block object-cover w-full max-w-full h-full align-middle border-0 box-border" aria-hidden="true" />
                           </div>
                           <div className="box-border" aria-hidden="true">
-                            <h3 className="mt-0 mb-4 text-2xl font-bold leading-5 text-slate-900" aria-hidden="true" />
-                            <p className="mt-0 mb-8 box-border" aria-hidden="true" />
+                          <h3 className="mt-0 mb-4 text-2xl font-bold leading-5 text-slate-900">My last app redesign project</h3>
+                            <p className="mt-0 mb-8 box-border">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lectus mattis nunc aliquam tincidunt est non dolor sit consectuetur do.</p>
                             <div className="flex items-center font-bold leading-4 box-border text-slate-900" aria-hidden="true">
                               <div aria-hidden="true" className="box-border">
                                 Read case study
@@ -797,10 +794,10 @@ export default function New() {
             </p>
           </div>
           <div data-w-id="aa5c9f48-3089-353a-3558-9b12a591cb00" style={{transform: 'translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)', opacity: 1, transformStyle: 'preserve-3d'}} className="flex relative justify-center items-center opacity-100 box-border">
-            <div data-delay={4000} data-animation="cross" className="clear-both relative mb-32 w-full h-full text-center bg-white" data-autoplay="false" data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit={0} data-nav-spacing={3} data-duration={500} data-infinite="true" role="region" aria-label="carousel">
+            <div data-delay={4000} data-animation="cross" className="clear-both relative mb-8 w-full h-full text-center bg-white" data-autoplay="false" data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit={0} data-nav-spacing={3} data-duration={500} data-infinite="true" role="region" aria-label="carousel">
               <div className="block overflow-hidden relative inset-x-0 mx-auto w-full h-full whitespace-nowrap" id="w-slider-mask-1" style={{maxWidth: '998px', zIndex: 1}}>
-                <div className="inline-block relative px-20 w-full h-full text-left align-top whitespace-normal opacity-100" aria-label="1 of 3" role="group" style={{transform: 'translateX(0px)', opacity: 1, marginRight: '20%'}}>
-                  <div className="flex justify-between items-center pt-6 pr-10 pb-16 pl-16 rounded-3xl">
+                <div className="inline-block relative px-8 w-full h-full text-left align-top whitespace-normal opacity-100" aria-label="1 of 3" role="group" style={{transform: 'translateX(0px)', opacity: 1, marginRight: '20%'}}>
+                  <div className="flex justify-between items-center pt-6 pr-10 pb-16 pl-10 rounded-3xl">
                     <div className="mt-16 mr-10 text-slate-500" style={{maxWidth: '478px'}}>
                       <p className="mt-0 mb-10 text-2xl">
                         “Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -883,7 +880,7 @@ export default function New() {
                 <div className="inline-block relative mx-1 mt-0 mb-2 w-4 h-4 bg-white cursor-pointer box-border" data-wf-ignore aria-label="Show slide 3 of 3" aria-pressed="false" role="button" tabIndex={-1} style={{marginLeft: '3px', marginRight: '3px', transition: 'background-color 100ms ease 0s, color 100ms ease 0s', borderRadius: '100%'}} />
               </div>
             </div>
-            <div className="absolute -z-[1] left-auto right-auto top-0 bottom-0 w-full max-w-4xl bg-violet-50 rounded-3xl -mt-7" style={{ minHeight: '580px', minWidth: '900px', inset: '0% auto'}} />
+            <div className="absolute -z-[1] left-auto right-auto top-0 bottom-0 w-full max-w-4xl bg-violet-50 rounded-3xl -mt-7" style={{ minWidth: '900px', inset: '0% auto'}} />
           </div>
         </div>
       </div>
@@ -1086,10 +1083,7 @@ export default function New() {
             </div>
             <div data-w-id="c52ce4d4-0663-d89d-957c-28c21111b778" className="flex justify-center items-center py-8 w-full text-center border-t border-solid opacity-100 box-border border-zinc-200" style={{transform: 'translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)', transformStyle: 'preserve-3d', opacity: 1}}>
               <div className="box-border">
-                Copyright © You X | Designed by
-                <a href="https://brixtemplates.com/" target="_blank" className="bg-transparent cursor-pointer box-border text-slate-900 hover:text-slate-500" style={{transition: 'color 300ms ease 0s', textDecoration: 'underline'}}>BRIX Templates</a>
-                - Powered by
-                <a href="https://webflow.com/" target="_blank" className="bg-transparent cursor-pointer box-border text-slate-900 hover:text-slate-500" style={{transition: 'color 300ms ease 0s', textDecoration: 'underline'}}>Webflow</a>
+                Copyright © David Hargitai
               </div>
             </div>
           </div>
