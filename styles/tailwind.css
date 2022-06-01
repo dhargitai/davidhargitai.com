@@ -63,3 +63,7 @@
 .w-icon-file-upload-icon:before {
   content: "\e903";
 }
+.checklist {
+  list-style: none;
+  list-style-image: url(/images/checkmark.svg);
+}
