@@ -40,20 +40,25 @@ export const serializer = {
     code: ({
       node: { language, content },
     }: { node: CodeBlock }) => (
-      <SyntaxHighlighter language={language} style={coldarkDark} showLineNumbers>
-        {content}
-      </SyntaxHighlighter>
+      <div className="overflow-x-scroll" style={{ width: 'calc(100vw - 3rem)', maxWidth: '838px' }}>
+        <SyntaxHighlighter
+          language={language}
+          style={coldarkDark}
+          showLineNumbers>
+          {content}
+        </SyntaxHighlighter>
+      </div>
     ),
     image: ({ node: { alt, asset, caption }}: { node: Image }) => {
       const imageBaseUrl = imageUrlFor(asset)
       return (
-        <figure>
+        <figure className="mb-6">
           <picture>
             <source src={`${imageBaseUrl}?w=400&auto`} media="(max-width: 400px)" />
             <source src={`${imageBaseUrl}?w=600&auto`} media="(max-width: 800px)" />
             <img src={`${imageBaseUrl}?w=790&format=auto`} alt={alt} />
           </picture>
-          <figcaption>{caption}</figcaption>
+          <figcaption className="text-center italic">{caption}</figcaption>
         </figure>
       );
     },
@@ -72,7 +77,7 @@ export const serializer = {
       }
 
       if (style === "blockquote") {
-        return <blockquote className="py-10 px-24 my-12 text-xl leading-7 text-center text-gray-600 bg-blue-50 rounded-3xl border-black">- {props.children}</blockquote>;
+        return <blockquote className="py-4 sm:py-7 md:py-10 px-8 sm:px-14 md:px-24 my-12 text-xl leading-7 text-center text-gray-600 bg-blue-50 rounded-3xl border-black italic">- {props.children}</blockquote>;
       }
 
       // Fall back to default handling

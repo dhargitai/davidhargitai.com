@@ -10,11 +10,13 @@ import {
   Meta,
   Outlet,
   Scripts,
-  ScrollRestoration,
+  ScrollRestoration
 } from "@remix-run/react";
 
 import tailwindStylesheetUrl from "./styles/tailwind.css";
 import { getUser } from "./session.server";
+import type { DynamicLinksFunction } from 'remix-utils';
+import { promiseHash, DynamicLinks } from 'remix-utils';
 
 export const links: LinksFunction = () => {
   return [
@@ -43,6 +45,16 @@ export const links: LinksFunction = () => {
   ];
 };
 
+const dynamicLinks: DynamicLinksFunction<LoaderData> = ({ data }) => {
+  console.log('data', data);
+  const url = new URL(data.url)
+  return [{ rel: "canonical", href: url.href }];
+};
+
+export const handle = {
+  dynamicLinks
+}
+
 export const meta: MetaFunction = () => ({
   charset: "utf-8",
   title: "David Hargitai",
@@ -51,12 +63,16 @@ export const meta: MetaFunction = () => ({
 
 type LoaderData = {
   user: Awaited<ReturnType<typeof getUser>>;
+  url: Awaited<string>
 };
 
 export const loader: LoaderFunction = async ({ request }) => {
-  return json<LoaderData>({
-    user: await getUser(request),
-  });
+  return json<LoaderData>(
+    await promiseHash({
+      user: getUser(request),
+      url: Promise.resolve(request.url),
+    })
+  );
 };
 
 export default function App() {
@@ -64,6 +80,7 @@ export default function App() {
     <html lang="en" className="h-full">
       <head>
         <Meta />
+        <DynamicLinks />
         <Links />
       </head>
       <body className="h-full font-satoshi text-lg">
