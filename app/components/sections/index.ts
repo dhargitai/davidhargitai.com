@@ -1,0 +1,6 @@
+export * from './Portfolio'
+export * from './Testimonials'
+export * from './Hero'
+export * from './Articles'
+export * from './Services'
+export * from './AboutMe'

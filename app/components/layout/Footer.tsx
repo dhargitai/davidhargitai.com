@@ -4,8 +4,10 @@ export function Footer() {
         <div className="flex-col items-stretch px-6 leading-8">
           <div className="justify-items-center items-center text-slate-500" style={{rowGap: '24px', gridTemplateColumns: '0.25fr 1fr', gridTemplateRows: 'auto'}}>
             <div className="flex flex-wrap justify-between pb-16 opacity-100" >
-              <div className="lg:mr-12 mb-16 w-full lg:w-1/3">
-                <a href="index.html" aria-current="page" className="inline-block mb-6 max-w-full bg-transparent cursor-pointer text-slate-900 hover:text-slate-500" style={{transition: 'color 300ms ease 0s', textDecoration: 'underline'}}><img src="/david-hargitai-logo.svg" alt="" className="inline-block w-40 max-w-full align-middle border-0 box-border" style={{transition: 'transform 300ms ease 0s, -webkit-transform 300ms ease 0s'}} /></a>
+              <div className="mb-16 w-full lg:w-1/3">
+                <a href="/" aria-current="page" className="inline-block mb-6 max-w-full bg-transparent cursor-pointer text-slate-900 hover:text-slate-500" style={{transition: 'color 300ms ease 0s', textDecoration: 'underline'}}>
+                  <img src="/david-hargitai-logo.svg" alt="" className="inline-block w-28 max-w-full align-middle border-0 box-border" style={{transition: 'transform 300ms ease 0s, -webkit-transform 300ms ease 0s'}} />
+                </a>
                 <p className="mt-0 mb-10">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lectus
                   mattis nunc aliquam tincidunt est non.
@@ -19,7 +21,7 @@ export function Footer() {
                 </div>
               </div>
 
-              <div className="flex flex-wrap gap-8 justify-between w-full lg:w-2/3">
+              <div className="flex flex-wrap gap-4 justify-between w-full lg:w-2/3">
                 <div className="w-full xs:w-1/2 sm:w-1/3">
                   <div className="mb-8 text-xl font-bold leading-5 text-slate-900">
                     Pages

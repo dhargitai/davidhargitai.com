@@ -46,7 +46,6 @@ export const links: LinksFunction = () => {
 };
 
 const dynamicLinks: DynamicLinksFunction<LoaderData> = ({ data }) => {
-  console.log('data', data);
   const url = new URL(data.url)
   return [{ rel: "canonical", href: url.href }];
 };
