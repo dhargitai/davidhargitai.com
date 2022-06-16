@@ -1,3 +1,5 @@
+import { Cta } from "~/components";
+
 export function Services() {
   return (
     <div className="pt-10 sm:pt-12 md:14 lg:pt-16 pb-20 font-medium leading-8 text-slate-500">
@@ -15,12 +17,10 @@ export function Services() {
             className="relative mx-auto px-6 text-center opacity-100"
           >
             <h2 className="mt-0 mb-4 text-4xl font-bold leading-6 text-slate-900">
-              My services
+              What am I up to now?
             </h2>
             <p className="mt-0 mb-5 box-border">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lectus
-              mattis nunc aliquam tincidunt est non. Viverra
-              <span className="box-border whitespace-nowrap">nec eu.</span>
+            I'd like to bring a lot of value to the world by doing what I love and helping others. Here are my current interests and learning paths:
             </p>
           </div>
           <div className="relative mt-16 flex items-center justify-center text-slate-500">
@@ -41,19 +41,17 @@ export function Services() {
                 className="mb-6 md:mb-0 flex flex-col items-start overflow-hidden bg-white py-12 pr-12 pl-10 opacity-100"
               >
                 <img
-                  src="/images/service-1-personal-x-template.svg"
+                  src="/images/service-4-personal-x-template.svg"
                   alt=""
                   className="mr-6 mb-6 inline-block max-w-full border-0 align-middle"
                   style={{ borderRadius: "20px" }}
                 />
                 <div className="box-border">
                   <h3 className="mt-0 mb-3 text-2xl font-bold leading-5 text-slate-900">
-                    Web Design
+                    Web development
                   </h3>
                   <p className="my-0 box-border">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-                    iaculis viverra mollis nisl dole dolorili tincidunt. Integer
-                    eget vitae id tortor.
+                    My favorite tool for implementing things on the internet is Javascript, precisely the Remix framework and the React library.
                   </p>
                 </div>
               </div>
@@ -71,16 +69,37 @@ export function Services() {
                 />
                 <div className="box-border">
                   <h3 className="mt-0 mb-3 text-2xl font-bold leading-5 text-slate-900">
-                    UI / UX Design
+                    Building online businesses
                   </h3>
                   <p className="my-0 box-border">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-                    iaculis viverra mollis nisl dole dolorili tincidunt. Integer
-                    eget vitae id tortor.
+                    This requires many skills to make it right, but the rewards are the highest here. This is the way to provide tons of value and set myself free at the same time.
                   </p>
                 </div>
               </div>
               <div
+                style={{
+                  borderRadius: "20px",
+                }}
+                className="mb-6 md:mb-0 flex flex-col items-start overflow-hidden bg-white py-12 pr-12 pl-10 opacity-100"
+              >
+                <img
+                  src="/images/service-1-personal-x-template.svg"
+                  alt=""
+                  className="mr-6 mb-6 inline-block max-w-full border-0 align-middle"
+                  style={{ borderRadius: "20px" }}
+                />
+                <div className="box-border">
+                  <h3 className="mt-0 mb-3 text-2xl font-bold leading-5 text-slate-900">
+                  Digital drawing
+                  </h3>
+                  <p className="my-0 box-border">
+                  
+I was always amazed how beautiful and cool graphics can be made with the proper digital tools and drawing/painting skills. Finally I started to learn this too.
+                  </p>
+                </div>
+              </div>
+              <div
+                
                 style={{
                   borderRadius: "20px",
                 }}
@@ -94,36 +113,11 @@ export function Services() {
                 />
                 <div className="box-border">
                   <h3 className="mt-0 mb-3 text-2xl font-bold leading-5 text-slate-900">
-                    Product Design
+                  Audience building
                   </h3>
                   <p className="my-0 box-border">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-                    iaculis viverra mollis nisl dole dolorili tincidunt. Integer
-                    eget vitae id tortor.
-                  </p>
-                </div>
-              </div>
-              <div
-                
-                style={{
-                  borderRadius: "20px",
-                }}
-                className="mb-6 md:mb-0 flex flex-col items-start overflow-hidden bg-white py-12 pr-12 pl-10 opacity-100"
-              >
-                <img
-                  src="/images/service-4-personal-x-template.svg"
-                  alt=""
-                  className="mr-6 mb-6 inline-block max-w-full border-0 align-middle"
-                  style={{ borderRadius: "20px" }}
-                />
-                <div className="box-border">
-                  <h3 className="mt-0 mb-3 text-2xl font-bold leading-5 text-slate-900">
-                    Web Development
-                  </h3>
-                  <p className="my-0 box-border">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-                    iaculis viverra mollis nisl dole dolorili tincidunt. Integer
-                    eget vitae id tortor.
+                  
+This is the most important skill of all. I want to meet and connect like-minded people, learn from them and grow with them.
                   </p>
                 </div>
               </div>
@@ -135,25 +129,8 @@ export function Services() {
             />
           </div>
 
-          <div
-            
-            style={{
-              
-            }}
-            className="mt-20 flex justify-center opacity-100"
-          >
-            <a
-              href="contact.html"
-              className="inline-block cursor-pointer border-0 border-none bg-slate-900 py-6 px-16 text-center text-lg font-bold text-white hover:bg-white hover:text-slate-900"
-              style={{
-                transition:
-                  "color 300ms ease 0s, transform 300ms ease 0s, box-shadow 300ms ease 0s, background-color 300ms ease 0s, -webkit-transform 300ms ease 0s",
-                textDecoration: "none",
-                borderRadius: "80px",
-              }}
-            >
-              Get in touch
-            </a>
+          <div className="mt-20 flex justify-center opacity-100">
+            <Cta link="https://twitter.com/hargitaidavid">Get in touch</Cta>
           </div>
         </div>
       </div>

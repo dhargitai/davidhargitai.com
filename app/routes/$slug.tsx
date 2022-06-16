@@ -6,18 +6,20 @@ import { imageUrlFor, serializer, content } from '~/utils';
 import { BasicLayout } from '~/components';
 
 type PostData = {
-  publishedAt: Date,
-  _updatedAt: Date,
-  slug: string,
-  title: string,
-  categories: Array<{ title: string, slug: string }>
+  publishedAt: Date;
+  _updatedAt: Date;
+  slug: string;
+  title: string;
+  categories: Array<{ title: string, slug: string }>;
   body: string;
   excerpt: string;
-  mainImage: { asset: { _ref: string } }
+  mainImage: { asset: { _ref: string } };
+  isPage: boolean;
+  hasSignature: boolean;
 };
 
 export let loader: LoaderFunction = async ({ params }) => {
-  const matchingPosts = await content.fetch("*[_type == 'post' && slug.current == $slug] {mainImage, publishedAt, _updatedAt, slug, title, body, excerpt, 'categories': categories[]->{title, slug}}", {
+  const matchingPosts = await content.fetch("*[_type == 'post' && slug.current == $slug] {mainImage, publishedAt, _updatedAt, slug, title, body, excerpt, 'categories': categories[]->{title, slug}, hasSignature, isPage}", {
     slug: params.slug
   });
 
@@ -41,13 +43,13 @@ export default function Index() {
   let post = useLoaderData<PostData>()
   let updatedAt = new Date(post._updatedAt)
   let categories = post.categories || []
-  let heroImageBaseUrl = imageUrlFor(post.mainImage.asset)
+  let heroImageBaseUrl = post?.mainImage?.asset ? imageUrlFor(post.mainImage.asset) : null
 
   return (
     <BasicLayout>
       <div className="py-8 sm:py-12 font-medium leading-8 text-slate-500">
-        <div className="table clear-both flex-col items-stretch  mx-auto leading-8" style={{maxWidth: '1248px', content: '" "', gridArea: '1 / 1 / 2 / 2'}}>
-          <div className="relative py-8 px-5 sm:px-16 lg:px-32 sm:pt-10 sm:pb-20 text-slate-500 bg-white rounded-3xl" style={{zIndex: 2, marginBottom: '-260px'}}>
+        <div className="table clear-both flex-col items-stretch  mx-auto leading-8" style={{maxWidth: '1248px', }}>
+          <div className="relative py-8 px-5 sm:px-16 lg:px-32 sm:pt-10 sm:pb-20 text-slate-500 bg-white rounded-3xl" style={{zIndex: 2, marginBottom: heroImageBaseUrl ? '-260px' : '0' }}>
             <div className="box-border">
               <h1 className="mx-0 mt-0 mb-6 text-4xl md:text-5xl lg:text-6xl font-bold opacity-100 text-slate-900">
                 {post.title}
@@ -67,25 +69,29 @@ export default function Index() {
       </div>
 
 
-
-      
-      
-      <div className="font-medium leading-8 text-slate-500 relative" style={{minHeight: '68vh'}}>
+      {heroImageBaseUrl && <div className="font-medium leading-8 text-slate-500 relative" style={{minHeight: '68vh'}}>
         <div className="overflow-hidden leading-8 bg-blue-50 box-border absolute" style={{zIndex: -1, inset: '0%'}}>
           <picture>
             <source src={`${heroImageBaseUrl}?w=400&h=150&fit=crop&crop=entropy&format=auto`} media="(max-width: 400px)" />
             <source src={`${heroImageBaseUrl}?w=800&h=300&fit=crop&crop=entropy&format=auto`} media="(max-width: 800px)" />
-            <img loading="eager" src={`${heroImageBaseUrl}?w=1440&h=500&fit=crop&crop=entropy&format=auto`} alt={`${post.title} hero image`} className="inline-block object-cover w-full max-w-full h-full align-middle border-0 opacity-100 box-border" />
+            <img
+              loading="eager"
+              src={`${heroImageBaseUrl}?w=1440&h=500&fit=crop&crop=entropy&format=auto`}
+              alt={`${post.title} hero`}
+              className="inline-block object-cover w-full max-w-full h-full align-middle border-0 opacity-100 box-border"
+            />
           </picture>
         </div>
-      </div>
+      </div>}
     
       <div className="pb-14 lg:pb-32 font-medium leading-8 text-slate-500">
-        <div className="table clear-both px-6 mx-auto leading-8" style={{maxWidth: '838px', content: '" "', gridArea: '1 / 1 / 2 / 2'}}>
+        <div className="table clear-both px-6 mx-auto leading-8" style={{maxWidth: '838px'}}>
           <div className="opacity-100 box-border">
-            <div className="table clear-both box-border" style={{content: '" "', gridArea: '1 / 1 / 2 / 2'}}>
+            <div className="table clear-both box-border prose text-lg">
 
               <BlockContent blocks={post.body} serializers={serializer} />
+
+              {post.hasSignature && <div className="text-right"><img src="/david-sign.svg" alt="signed by David" className="inline-block w-24 max-w-full align-middle border-0" /></div>}
               
             </div>
           </div>

@@ -1,3 +1,5 @@
+import { Cta } from "~/components";
+
 export function Hero() {
   return (
     <div className="pt-10 sm:pt-12 md:14 lg:pt-16 pb-20 font-medium leading-8 text-slate-500">
@@ -19,12 +21,15 @@ export function Hero() {
               }}
               className="mx-auto mb-6 opacity-100"
             >
-              <h3 className="mt-0 mb-5 text-xl sm:text-2xl font-bold leading-5 text-gray-600">
-                Hey, I’m John Carter
+              <h3 className="mt-0 mb-5 text-xl sm:text-2xl font-bold text-gray-600">
+                Hey, I’m David
               </h3>
               <h1 className="mx-0 mt-0 mb-6 text-4xl sm:text-5xl lg:text-6xl font-bold text-slate-900">
-                I enjoy designing tech websites and digital products
+                Currently I'm building up the components of my ideal life as a web developer
               </h1>
+              <h3 className="mt-0 mb-5 text-xl sm:text-2xl font-bold text-gray-600">
+              (or solopreneur? indie hacker? digital artist? whatever)
+              </h3>
               <img
                 src="/images/hero-underline-personal-x-template.svg"
                 loading="eager"
@@ -33,31 +38,15 @@ export function Hero() {
                 style={{ top: "-38px", zIndex: -1 }}
               />
               <div className="box-border">
-                <a
-                  href="contact.html"
-                  className="inline-block cursor-pointer border-0 border-none bg-slate-900 py-6 px-16 text-lg font-bold text-white hover:bg-white hover:text-slate-900"
-                  style={{
-                    transition:
-                      "color 300ms ease 0s, transform 300ms ease 0s, box-shadow 300ms ease 0s, background-color 300ms ease 0s, -webkit-transform 300ms ease 0s",
-                    textDecoration: "none",
-                    borderRadius: "80px",
-                  }}
-                >
-                  Get in touch
-                </a>
+                <Cta link="https://twitter.com/hargitaidavid">Get in touch</Cta>
               </div>
             </div>
             <div
               className="w-full overflow-hidden opacity-100"
             >
               <img
-                src="/images/hero-image-personal-x-template.png"
-                srcSet="
-          /images/hero-image-personal-x-template-p-500.png  500w,
-          /images/hero-image-personal-x-template.png       1184w
-        "
-                sizes="(max-width: 479px) 93vw, (max-width: 767px) 90vw, (max-width: 991px) 472px, (max-width: 1439px) 47vw, 588px"
-                alt=""
+                src="/images/david_hargitai.png"
+                alt="David Hargitai"
                 className="mx-auto inline-block w-full max-w-full sm:max-w-md border-0 align-middle"
               />
             </div>

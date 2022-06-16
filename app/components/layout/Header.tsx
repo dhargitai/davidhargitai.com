@@ -1,4 +1,5 @@
 import * as React from 'react'
+import { Link } from "@remix-run/react";
 import { MenuButton } from '~/components';
 
 export function Header() {
@@ -9,16 +10,17 @@ export function Header() {
     <div className="container-xl flex-col items-stretch px-6 mx-auto leading-8" style={{maxWidth: '1248px', content: '" "', gridArea: '1 / 1 / 2 / 2'}}>
       <div className="text-lg flex justify-between items-center text-slate-500" style={{zIndex: 99}}>
         <div className="relative" style={{zIndex: 99}}>
-          <a href="index.html" aria-current="page" className="float-left relative p-0 bg-transparent cursor-pointer text-zinc-800 hover:text-slate-500" style={{transition: 'color 300ms ease 0s', textDecoration: 'none'}}><img src="/david-hargitai-logo.svg" alt="" className="inline-block w-24 max-w-full align-middle border-0" style={{transition: 'transform 300ms ease 0s, -webkit-transform 300ms ease 0s'}} /></a>
+          <Link to="/" className="float-left relative p-0 bg-transparent cursor-pointer text-zinc-800 hover:text-slate-500" style={{transition: 'color 300ms ease 0s', textDecoration: 'none'}}>
+            <img src="/david-hargitai-logo.svg" alt="David Hargitai logo" className="inline-block w-24 max-w-full align-middle border-0" style={{transition: 'transform 300ms ease 0s, -webkit-transform 300ms ease 0s'}} />
+          </Link>
         </div>
-        <div className="flex justify-between items-center ml-5">
+        {/* <div className="flex justify-between items-center ml-5">
           <nav role="navigation" className="pt-0 w-full hidden sm:block">
             <ul role="list" className="flex justify-end items-center pl-0 my-0 list-none" style={{listStyle: 'outside none none'}}>
               <li className="py-2 mr-10 text-left">
-                <a href="index.html" aria-current="page" className="leading-4 bg-transparent cursor-pointer text-slate-900 hover:text-slate-500" style={{transition: 'color 300ms ease 0s', textDecoration: 'none', listStyle: 'outside none none'}}>Home</a>
-              </li>
-              <li className="py-2 mr-10 text-left">
-                <a href="about.html" className="leading-4 bg-transparent cursor-pointer text-slate-900 hover:text-slate-500" style={{transition: 'color 300ms ease 0s', textDecoration: 'none', listStyle: 'outside none none'}}>About</a>
+                <Link to="/" className="leading-4 bg-transparent cursor-pointer text-slate-900 hover:text-slate-500" style={{transition: 'color 300ms ease 0s', textDecoration: 'none', listStyle: 'outside none none'}}>
+                  Home
+                </Link>
               </li>
               <li className="py-2 mr-10 text-left">
                 <a href="portfolio.html" className="leading-4 bg-transparent cursor-pointer text-slate-900 hover:text-slate-500" style={{transition: 'color 300ms ease 0s', textDecoration: 'none', listStyle: 'outside none none'}}>Portfolio</a>
@@ -106,11 +108,11 @@ export function Header() {
           </nav>
 
           <MenuButton expanded={expanded} onClick={() => { setExpanded(!expanded) }} />
-        </div>
+        </div> */}
       </div>
     </div>
 
-    <div className="sm:hidden overflow-hidden absolute inset-x-0 top-full w-full leading-8 box-border" data-wf-ignore id="w-nav-overlay-0">
+    {/* <div className="sm:hidden overflow-hidden absolute inset-x-0 top-full w-full leading-8 box-border" data-wf-ignore id="w-nav-overlay-0">
       <nav role="navigation" className="block overflow-visible inset-x-0 top-0 px-6 pt-0 pb-8 w-full font-medium leading-8 text-center border-b border-solid border-zinc-200 bg-white text-slate-500"
         style={{
           transform: `translateY(${expanded ? '0px' : '-100%'}) translateX(0px)`,
@@ -209,7 +211,7 @@ export function Header() {
         </ul>
       </nav>
 
-    </div>
+    </div> */}
   </div>
 
   );

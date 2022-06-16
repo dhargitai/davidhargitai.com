@@ -1,3 +1,5 @@
+import { Cta } from "~/components";
+
 export function AboutMe() {
   return (
     <div className="pt-10 sm:pt-12 md:14 lg:pt-16 pb-20 font-medium leading-8 text-slate-500">
@@ -14,15 +16,8 @@ export function AboutMe() {
               className="lg:w-1/2 overflow-hidden opacity-100"
             >
               <img
-                src="/images/home-about-personal-x-template.jpg"
-                srcSet="
-          /images/home-about-personal-x-template-p-500.jpeg   500w,
-          /images/home-about-personal-x-template-p-800.jpeg   800w,
-          /images/home-about-personal-x-template-p-1080.jpeg 1080w,
-          /images/home-about-personal-x-template.jpg         1194w
-        "
-                sizes="(max-width: 479px) 93vw, (max-width: 767px) 94vw, (max-width: 991px) 95vw, (max-width: 1439px) 47vw, 589.46875px"
-                alt=""
+                src="/images/david_hargitai_krumpensee.jpeg"
+                alt="David Hargitai at hiking – Krumpensee"
                 className="rounded-3xl box-border inline-block max-w-full border-0 align-middle"
               />
             </div>
@@ -33,24 +28,11 @@ export function AboutMe() {
                 About me
               </h2>
               <p className="mt-0 mb-12">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lectus
-                mattis nunc aliquam tincidunt est non. Viverra nec eu, in
-                ridiculus egestas mi. Vulputate tristique porttitor enim aliquam
-                ullamcorper. Velit dui laoreet in{" "}
-                <span className="box-border whitespace-nowrap">et mus.</span>
+              Basically, I'm a positive and cheerful person. How could I be anything else, as I'm healthy and surrounded by loving, fantastic family and friends. I'm thankful for them every day!
+              <br />
+              Also, as everyone else, I've also lived some harder times too, but now I can be grateful for those for helping me to become the person I am today.
               </p>
-              <a
-                href="about.html"
-                className="inline-block cursor-pointer border-0 border-none bg-slate-900 py-6 px-16 text-center text-lg font-bold text-white hover:bg-white hover:text-slate-900"
-                style={{
-                  transition:
-                    "color 300ms ease 0s, transform 300ms ease 0s, box-shadow 300ms ease 0s, background-color 300ms ease 0s, -webkit-transform 300ms ease 0s",
-                  textDecoration: "none",
-                  borderRadius: "80px",
-                }}
-              >
-                More about me
-              </a>
+              <Cta link="/about-me">More about me</Cta>
             </div>
           </div>
         </div>
