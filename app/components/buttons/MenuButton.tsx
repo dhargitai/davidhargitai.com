@@ -1,8 +1,15 @@
-export function MenuButton({ expanded, onClick }) {
+import type { Property } from 'csstype'
+
+type Props = {
+  expanded: boolean,
+  onClick: () => void,
+}
+
+export function MenuButton({ expanded, onClick }: Props) {
   const baseLineStyle = {
     minHeight: '2px',
     borderRadius: '10px',
-    transformStyle: 'preserve-3d',
+    transformStyle: 'preserve-3d' as Property.TransformStyle,
     transition: 'transform 300ms ease 0s, background-color 350ms ease 0s, -webkit-transform 300ms ease 0s'
   }
   const upperLineStyle = {

@@ -229,7 +229,7 @@ export function Testimonials() {
                     }
                   
                     slides.forEach((slide, indx) => {
-                      slide.style.transform = `translateX(-${(slideWidth + margin) * currentSlide}px)`;
+                      (slide as HTMLElement).style.transform = `translateX(-${(slideWidth + margin) * currentSlide}px)`;
                     });
                   }
 

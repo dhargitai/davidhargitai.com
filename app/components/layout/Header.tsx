@@ -1,9 +1,9 @@
-import * as React from 'react'
+// import * as React from 'react'
 import { Link } from "@remix-run/react";
-import { MenuButton } from '~/components';
+// import { MenuButton } from '~/components';
 
 export function Header() {
-  const [expanded, setExpanded] = React.useState(false)
+  // const [expanded, setExpanded] = React.useState(false)
 
   return (
     <div role="banner" className="relative py-8 font-medium leading-8 bg-white opacity-100 text-slate-500" style={{opacity: 1, zIndex: 1000, content: '" "', gridArea: '1 / 1 / 2 / 2'}}>

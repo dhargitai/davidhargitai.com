@@ -1,11 +1,11 @@
 import {
   BasicLayout,
-  Portfolio,
-  Testimonials,
+  // Portfolio,
+  // Testimonials,
   Hero,
   Services,
   AboutMe,
-  Articles,
+  // Articles,
 } from "~/components";
 
 export default function Index() {

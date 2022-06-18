@@ -1,11 +1,10 @@
+import { useMatches } from "@remix-run/react";
+import { useMemo } from "react";
+import type { User } from "~/models/user.server";
+
 export * from './serializer'
 export * from './content'
 export * from './urlFor'
-
-import { useMatches } from "@remix-run/react";
-import { useMemo } from "react";
-
-import type { User } from "~/models/user.server";
 
 const DEFAULT_REDIRECT = "/";
 

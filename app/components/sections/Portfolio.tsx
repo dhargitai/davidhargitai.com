@@ -68,7 +68,7 @@ export function Portfolio() {
                   <div className="box-border">
                     <div role="list" className="box-border">
                       <div role="listitem" className="box-border">
-                        <a
+                        {/* <a
                           href="#"
                           className="box-border inline-block max-w-full cursor-pointer overflow-visible rounded-none bg-white hover:text-slate-500"
                           style={{
@@ -105,7 +105,7 @@ export function Portfolio() {
                               />
                             </div>
                           </div>
-                        </a>
+                        </a> */}
                       </div>
                     </div>
                     {/* <div className="flex-col p-5 my-5 text-gray-600 bg-white border border-solid border-zinc-200" style={{borderRadius: '18px'}}>
@@ -127,7 +127,7 @@ export function Portfolio() {
                         className="box-border"
                         aria-hidden="true"
                       >
-                        <a
+                        {/* <a
                           href="#"
                           className="box-border inline-block max-w-full cursor-pointer overflow-visible rounded-none bg-white hover:text-slate-500"
                           tabIndex={-1}
@@ -174,7 +174,7 @@ export function Portfolio() {
                               />
                             </div>
                           </div>
-                        </a>
+                        </a> */}
                       </div>
                     </div>
                   </div>
@@ -193,7 +193,7 @@ export function Portfolio() {
                         className="box-border"
                         aria-hidden="true"
                       >
-                        <a
+                        {/* <a
                           href="#"
                           className="box-border inline-block max-w-full cursor-pointer overflow-visible rounded-none bg-white hover:text-slate-500"
                           tabIndex={-1}
@@ -240,7 +240,7 @@ export function Portfolio() {
                               />
                             </div>
                           </div>
-                        </a>
+                        </a> */}
                       </div>
                     </div>
                     <div
@@ -268,7 +268,7 @@ export function Portfolio() {
                         className="box-border"
                         aria-hidden="true"
                       >
-                        <a
+                        {/* <a
                           href="#"
                           className="box-border inline-block max-w-full cursor-pointer overflow-visible rounded-none bg-white hover:text-slate-500"
                           tabIndex={-1}
@@ -315,7 +315,7 @@ export function Portfolio() {
                               />
                             </div>
                           </div>
-                        </a>
+                        </a> */}
                       </div>
                     </div>
                     <div
@@ -372,7 +372,7 @@ export function Portfolio() {
                     }
                   
                     slides.forEach((slide, indx) => {
-                      slide.style.transform = `translateX(-${(slideWidth + margin) * currentSlide}px)`;
+                      (slide as HTMLElement).style.transform = `translateX(-${(slideWidth + margin) * currentSlide}px)`;
                     });
                   }
 

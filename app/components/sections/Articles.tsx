@@ -36,8 +36,7 @@ export function Articles() {
               className="mx-auto max-w-2xl lg:max-w-full flex flex-col lg:grid auto-cols-[1fr] grid-cols-3 gap-7 text-slate-500"
             >
               <div role="listitem" className="box-border">
-                <a
-                  
+                {/* <a
                   href="#"
                   className="box-border flex min-h-full max-w-full cursor-pointer flex-col overflow-hidden border border-solid border-zinc-200 bg-white hover:text-slate-500"
                   style={{
@@ -71,12 +70,11 @@ export function Articles() {
                       <div className="box-border">August 26, 2021</div>
                     </div>
                   </div>
-                </a>
+                </a> */}
               </div>
 
               <div role="listitem" className="box-border">
-                <a
-                  
+                {/* <a
                   href="#"
                   className="box-border flex min-h-full max-w-full cursor-pointer flex-col overflow-hidden border border-solid border-zinc-200 bg-white hover:text-slate-500"
                   style={{
@@ -110,11 +108,10 @@ export function Articles() {
                       <div className="box-border">August 27, 2021</div>
                     </div>
                   </div>
-                </a>
+                </a> */}
               </div>
               <div role="listitem" className="box-border">
-                <a
-                  
+                {/* <a
                   href="#"
                   className="box-border flex min-h-full max-w-full cursor-pointer flex-col overflow-hidden border border-solid border-zinc-200 bg-white hover:text-slate-500"
                   style={{
@@ -148,7 +145,7 @@ export function Articles() {
                       <div className="box-border">August 28, 2021</div>
                     </div>
                   </div>
-                </a>
+                </a> */}
               </div>
 
               <div

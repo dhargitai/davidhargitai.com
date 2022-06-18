@@ -1,17 +1,19 @@
 import type { MetaFunction, LoaderFunction } from "@remix-run/node";
 import { json } from "@remix-run/node";
 import { useLoaderData } from "@remix-run/react";
-import BlockContent from "@sanity/block-content-to-react";
+// import BlockContent from "@sanity/block-content-to-react";
+import { PortableText } from '@portabletext/react'
 import { imageUrlFor, serializer, content } from '~/utils';
 import { BasicLayout } from '~/components';
+import type { TypedObject } from '@portabletext/types'
 
 type PostData = {
   publishedAt: Date;
   _updatedAt: Date;
   slug: string;
   title: string;
-  categories: Array<{ title: string, slug: string }>;
-  body: string;
+  categories: Array<{ title: string, slug: { current: string } }>;
+  body: TypedObject | Array<TypedObject>;
   excerpt: string;
   mainImage: { asset: { _ref: string } };
   isPage: boolean;
@@ -89,7 +91,7 @@ export default function Index() {
           <div className="opacity-100 box-border">
             <div className="table clear-both box-border prose text-lg">
 
-              <BlockContent blocks={post.body} serializers={serializer} />
+              <PortableText value={post.body} components={serializer} />
 
               {post.hasSignature && <div className="text-right"><img src="/david-sign.svg" alt="signed by David" className="inline-block w-24 max-w-full align-middle border-0" /></div>}
               
