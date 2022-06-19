@@ -24,7 +24,7 @@ export function Testimonials() {
             }}
             className="mx-auto mb-16 px-6 text-center opacity-100"
           >
-            <h2 className="mx-auto mt-0 mb-6 text-4xl font-bold text-slate-900">
+            <h2 className="mx-auto mt-0 mb-6 text-4xl font-bold text-dh-dark">
               What my clients say about my work
             </h2>
             <p
@@ -81,7 +81,7 @@ export function Testimonials() {
                         Viverra nec eu, in ridicus”
                       </p>
                       <div className="box-border">
-                        <div className="mb-3 font-bold leading-4 text-slate-900">
+                        <div className="mb-3 font-bold leading-4 text-dh-dark">
                           Matt Canon
                         </div>
                         <div className="box-border">VP of Design at Google</div>
@@ -122,7 +122,7 @@ export function Testimonials() {
                         Viverra nec eu, in ridicus”
                       </p>
                       <div className="box-border">
-                        <div className="mb-3 font-bold leading-4 text-slate-900">
+                        <div className="mb-3 font-bold leading-4 text-dh-dark">
                           Matt Canon
                         </div>
                         <div className="box-border">VP of Design at Google</div>
@@ -165,7 +165,7 @@ export function Testimonials() {
                         Viverra nec eu, in ridicus”
                       </p>
                       <div className="box-border">
-                        <div className="mb-3 font-bold leading-4 text-slate-900">
+                        <div className="mb-3 font-bold leading-4 text-dh-dark">
                           Matt Canon
                         </div>
                         <div className="box-border">VP of Design at Google</div>

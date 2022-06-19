@@ -12,12 +12,12 @@ export function Articles() {
           <div
             className="mb-8 lg:mb-16 flex flex-col lg:flex-row gap-8 text-center items-center lg:text-left justify-between opacity-100"
           >
-            <h2 className="my-0 text-4xl font-bold leading-6 text-slate-900">
+            <h2 className="my-0 text-4xl font-bold leading-6 text-dh-dark">
               Articles &amp; News
             </h2>
             <a
               href="blog.html"
-              className="mb-6 cursor-pointer border-0 border-none bg-slate-900 py-6 px-16 text-center text-lg font-bold text-white hover:bg-white hover:text-slate-900"
+              className="mb-6 cursor-pointer border-0 border-none bg-slate-900 py-6 px-16 text-center text-lg font-bold text-white hover:bg-white hover:text-dh-dark"
               style={{
                 textDecoration: "none",
                 borderRadius: "80px",
@@ -58,7 +58,7 @@ export function Articles() {
                     />
                   </div>
                   <div className="px-6 pt-6 pb-12">
-                    <h3 className="mt-0 mb-5 text-2xl font-bold text-slate-900">
+                    <h3 className="mt-0 mb-5 text-2xl font-bold text-dh-dark">
                       What is the right design tool to choose in 2022?
                     </h3>
                     <div className="box-border flex flex-wrap items-center">
@@ -96,7 +96,7 @@ export function Articles() {
                     />
                   </div>
                   <div className="px-6 pt-6 pb-12">
-                    <h3 className="mt-0 mb-5 text-2xl font-bold text-slate-900">
+                    <h3 className="mt-0 mb-5 text-2xl font-bold text-dh-dark">
                       Font sizes definitive guide
                     </h3>
                     <div className="box-border flex flex-wrap items-center">
@@ -133,7 +133,7 @@ export function Articles() {
                     />
                   </div>
                   <div className="px-6 pt-6 pb-12">
-                    <h3 className="mt-0 mb-5 text-2xl font-bold text-slate-900">
+                    <h3 className="mt-0 mb-5 text-2xl font-bold text-dh-dark">
                       WFT is happening in the industry?
                     </h3>
                     <div className="box-border flex flex-wrap items-center">

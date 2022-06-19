@@ -2,6 +2,28 @@ module.exports = {
   content: ["./app/**/*.{ts,tsx,jsx,js}"],
   theme: {
     extend: {
+      colors: {
+        'dh-dark': {
+          light: '#808080',
+          DEFAULT: '#2c2c2c',
+          dark: '#1a1a1a',
+        },
+        'dh-blue': {
+          light: '#72b3d6',
+          DEFAULT: '#1481BA',
+          dark: '#0c4d70',
+        },
+        'dh-sky': {
+          light: '#70d3ef',
+          DEFAULT: '#11B5E4',
+          dark: '#0a6d89',
+        },
+        'dh-yellow': {
+          light: '#ffe07f',
+          DEFAULT: '#FFCC29',
+          dark: '#997a19',
+        },
+      },
       fontFamily: {
         satoshi: ["Satoshi", "sans-serif"],
         'webflow-icons': ["webflow-icons"],

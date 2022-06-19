@@ -25,7 +25,7 @@ export function Portfolio() {
             className="mb-36 md:mb-20 flex flex-wrap items-center justify-between opacity-100"
           >
             <div className="relative box-border" style={{ maxWidth: "465px" }}>
-              <h2 className="my-0 text-4xl font-bold text-slate-900">
+              <h2 className="my-0 text-4xl font-bold text-dh-dark">
                 Take a look at my design portfolio
               </h2>
               <img
@@ -87,7 +87,7 @@ export function Portfolio() {
                             />
                           </div>
                           <div className="box-border">
-                            <h3 className="mt-0 mb-4 text-2xl font-bold leading-5 text-slate-900">
+                            <h3 className="mt-0 mb-4 text-2xl font-bold leading-5 text-dh-dark">
                               My last app redesign project
                             </h3>
                             <p className="mt-0 mb-8 box-border">
@@ -95,7 +95,7 @@ export function Portfolio() {
                               elit. Lectus mattis nunc aliquam tincidunt est non
                               dolor sit consectuetur do.
                             </p>
-                            <div className="box-border flex items-center font-bold leading-4 text-slate-900">
+                            <div className="box-border flex items-center font-bold leading-4 text-dh-dark">
                               <div className="box-border">Read case study</div>
                               <img
                                 src="/images/arrow-personal-x-template.svg"
@@ -150,7 +150,7 @@ export function Portfolio() {
                             />
                           </div>
                           <div className="box-border" aria-hidden="true">
-                            <h3 className="mt-0 mb-4 text-2xl font-bold leading-5 text-slate-900">
+                            <h3 className="mt-0 mb-4 text-2xl font-bold leading-5 text-dh-dark">
                               My last app redesign project
                             </h3>
                             <p className="mt-0 mb-8 box-border">
@@ -159,7 +159,7 @@ export function Portfolio() {
                               dolor sit consectuetur do.
                             </p>
                             <div
-                              className="box-border flex items-center font-bold leading-4 text-slate-900"
+                              className="box-border flex items-center font-bold leading-4 text-dh-dark"
                               aria-hidden="true"
                             >
                               <div aria-hidden="true" className="box-border">
@@ -216,7 +216,7 @@ export function Portfolio() {
                             />
                           </div>
                           <div className="box-border" aria-hidden="true">
-                            <h3 className="mt-0 mb-4 text-2xl font-bold leading-5 text-slate-900">
+                            <h3 className="mt-0 mb-4 text-2xl font-bold leading-5 text-dh-dark">
                               My last app redesign project
                             </h3>
                             <p className="mt-0 mb-8 box-border">
@@ -225,7 +225,7 @@ export function Portfolio() {
                               dolor sit consectuetur do.
                             </p>
                             <div
-                              className="box-border flex items-center font-bold leading-4 text-slate-900"
+                              className="box-border flex items-center font-bold leading-4 text-dh-dark"
                               aria-hidden="true"
                             >
                               <div aria-hidden="true" className="box-border">
@@ -292,7 +292,7 @@ export function Portfolio() {
                           </div>
                           <div className="box-border" aria-hidden="true">
                             <h3
-                              className="mt-0 mb-4 text-2xl font-bold leading-5 text-slate-900"
+                              className="mt-0 mb-4 text-2xl font-bold leading-5 text-dh-dark"
                               aria-hidden="true"
                             />
                             <p
@@ -300,7 +300,7 @@ export function Portfolio() {
                               aria-hidden="true"
                             />
                             <div
-                              className="box-border flex items-center font-bold leading-4 text-slate-900"
+                              className="box-border flex items-center font-bold leading-4 text-dh-dark"
                               aria-hidden="true"
                             >
                               <div aria-hidden="true" className="box-border">

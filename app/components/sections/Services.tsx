@@ -16,7 +16,7 @@ export function Services() {
             }}
             className="relative mx-auto px-6 text-center opacity-100"
           >
-            <h2 className="mt-0 mb-4 text-4xl font-bold leading-6 text-slate-900">
+            <h2 className="mt-0 mb-4 text-4xl font-bold leading-6 text-dh-dark">
               What am I up to now?
             </h2>
             <p className="mt-0 mb-5 box-border">
@@ -47,7 +47,7 @@ export function Services() {
                   style={{ borderRadius: "20px" }}
                 />
                 <div className="box-border">
-                  <h3 className="mt-0 mb-3 text-2xl font-bold leading-5 text-slate-900">
+                  <h3 className="mt-0 mb-3 text-2xl font-bold leading-5 text-dh-dark">
                     Web development
                   </h3>
                   <p className="my-0 box-border">
@@ -68,7 +68,7 @@ export function Services() {
                   style={{ borderRadius: "20px" }}
                 />
                 <div className="box-border">
-                  <h3 className="mt-0 mb-3 text-2xl font-bold leading-5 text-slate-900">
+                  <h3 className="mt-0 mb-3 text-2xl font-bold leading-5 text-dh-dark">
                     Building online businesses
                   </h3>
                   <p className="my-0 box-border">
@@ -89,7 +89,7 @@ export function Services() {
                   style={{ borderRadius: "20px" }}
                 />
                 <div className="box-border">
-                  <h3 className="mt-0 mb-3 text-2xl font-bold leading-5 text-slate-900">
+                  <h3 className="mt-0 mb-3 text-2xl font-bold leading-5 text-dh-dark">
                   Digital drawing
                   </h3>
                   <p className="my-0 box-border">
@@ -112,7 +112,7 @@ I was always amazed how beautiful and cool graphics can be made with the proper 
                   style={{ borderRadius: "20px" }}
                 />
                 <div className="box-border">
-                  <h3 className="mt-0 mb-3 text-2xl font-bold leading-5 text-slate-900">
+                  <h3 className="mt-0 mb-3 text-2xl font-bold leading-5 text-dh-dark">
                   Audience building
                   </h3>
                   <p className="my-0 box-border">

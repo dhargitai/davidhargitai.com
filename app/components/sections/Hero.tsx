@@ -24,7 +24,7 @@ export function Hero() {
               <h3 className="mt-0 mb-5 text-xl sm:text-2xl font-bold text-gray-600">
                 Hey, I’m David
               </h3>
-              <h1 className="mx-0 mt-0 mb-6 text-4xl sm:text-5xl lg:text-6xl font-bold text-slate-900">
+              <h1 className="mx-0 mt-0 mb-6 text-4xl sm:text-5xl lg:text-6xl font-bold text-dh-dark">
                 Currently I'm building up the components of my ideal life as a web developer
               </h1>
               <h3 className="mt-0 mb-5 text-xl sm:text-2xl font-bold text-gray-600">

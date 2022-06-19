@@ -53,7 +53,7 @@ export default function Index() {
         <div className="table clear-both flex-col items-stretch  mx-auto leading-8" style={{maxWidth: '1248px', }}>
           <div className="relative py-8 px-5 sm:px-16 lg:px-32 sm:pt-10 sm:pb-20 text-slate-500 bg-white rounded-3xl" style={{zIndex: 2, marginBottom: heroImageBaseUrl ? '-260px' : '0' }}>
             <div className="box-border">
-              <h1 className="mx-0 mt-0 mb-6 text-4xl md:text-5xl lg:text-6xl font-bold opacity-100 text-slate-900">
+              <h1 className="mx-0 mt-0 mb-6 text-4xl md:text-5xl lg:text-6xl font-bold opacity-100 text-dh-dark">
                 {post.title}
               </h1>
               <p className="mt-0 mb-12 opacity-100">
@@ -62,7 +62,7 @@ export default function Index() {
               <div className="flex flex-wrap items-center -mb-4 opacity-100">
                 <div className="mb-6 w-full">Last update: <time dateTime={updatedAt.toISOString()} itemProp="dateModified">{updatedAt.toDateString()}</time></div>
                 {categories.map(category => (
-                  <a key={category.slug.current} href={`/category/${category.slug.current}`} className="py-4 px-8 mr-8 font-bold leading-5 bg-gray-100 cursor-pointer text-slate-900 hover:bg-slate-900 hover:text-white" style={{textDecoration: 'none', transition: 'transform 300ms ease 0s, background-color 300ms ease 0s, color 300ms ease 0s, -webkit-transform 300ms ease 0s', borderRadius: '500px'}}>{category.title}</a>
+                  <a key={category.slug.current} href={`/category/${category.slug.current}`} className="py-4 px-8 mr-8 font-bold leading-5 bg-gray-100 cursor-pointer text-dh-dark hover:bg-slate-900 hover:text-white" style={{textDecoration: 'none', transition: 'transform 300ms ease 0s, background-color 300ms ease 0s, color 300ms ease 0s, -webkit-transform 300ms ease 0s', borderRadius: '500px'}}>{category.title}</a>
                 ))}
               </div>
             </div>
@@ -106,10 +106,10 @@ export default function Index() {
       <div className="pt-14 lg:pt-20 pb-14 lg:pb-24 font-medium leading-8 text-slate-500">
         <div className="clear-both flex-col items-stretch px-6 mx-auto leading-8" style={{maxWidth: '1248px', gridArea: '1 / 1 / 2 / 2'}}>
           <div className="flex-col items-center mx-auto mb-16 text-slate-500" style={{maxWidth: '720px'}}>
-            <h2 className="my-0 text-4xl font-bold leading-6 text-slate-900">
+            <h2 className="my-0 text-4xl font-bold leading-6 text-dh-dark">
               Latest posts
             </h2>
-            <a href="/blog" className="inline-block py-6 px-16 mb-6 text-lg font-bold text-center text-white border-0 border-none cursor-pointer bg-slate-900 hover:bg-white hover:text-slate-900" style={{textDecoration: 'none', borderRadius: '80px', transition: 'color 300ms ease 0s, transform 300ms ease 0s, box-shadow 300ms ease 0s, background-color 300ms ease 0s, -webkit-transform 300ms ease 0s'}}>Browse all posts</a>
+            <a href="/blog" className="inline-block py-6 px-16 mb-6 text-lg font-bold text-center text-white border-0 border-none cursor-pointer bg-slate-900 hover:bg-white hover:text-dh-dark" style={{textDecoration: 'none', borderRadius: '80px', transition: 'color 300ms ease 0s, transform 300ms ease 0s, box-shadow 300ms ease 0s, background-color 300ms ease 0s, -webkit-transform 300ms ease 0s'}}>Browse all posts</a>
           </div>
           <div className="box-border">
             <div role="list" className="mx-auto text-slate-500 grid grid-cols-1 lg:grid-cols-3 gap-6">
@@ -118,7 +118,7 @@ export default function Index() {
                     <img src="https://assets.website-files.com/61129bb2ecedf8658b4c6911/611418e277292729f8324d1c_post-01-featured-image-personal-x-template.jpg" alt="What is the right design tool to choose in 2022?" className="inline-block object-cover w-full max-w-full h-full align-middle border-0 box-border will-change-transform" style={{transform: 'translate3d(0px, 0px, 0px) scale3d(1.0011, 1.0011, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)', transformStyle: 'preserve-3d'}} />
                   </div>
                   <div className="px-6 pt-6 pb-12">
-                    <h3 className="mt-0 mb-5 text-2xl font-bold text-slate-900">
+                    <h3 className="mt-0 mb-5 text-2xl font-bold text-dh-dark">
                       What is the right design tool to choose in 2022?
                     </h3>
                     <div className="flex flex-wrap items-center box-border">
@@ -133,7 +133,7 @@ export default function Index() {
                     <img src="https://assets.website-files.com/61129bb2ecedf8658b4c6911/611418854f62aac0a4e703c7_post-02-featured-image-personal-x-template.jpg" alt="Font sizes in UI design: The complete guide to follow" className="inline-block object-cover w-full max-w-full h-full align-middle border-0 box-border" style={{transform: 'translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)', transformStyle: 'preserve-3d'}} />
                   </div>
                   <div className="px-6 pt-6 pb-12">
-                    <h3 className="mt-0 mb-5 text-2xl font-bold text-slate-900">
+                    <h3 className="mt-0 mb-5 text-2xl font-bold text-dh-dark">
                       Font sizes in UI design: The complete guide to follow
                     </h3>
                     <div className="flex flex-wrap items-center box-border">
@@ -148,7 +148,7 @@ export default function Index() {
                     <img src="https://assets.website-files.com/61129bb2ecedf8658b4c6911/61141875f2025117a96d5d32_post-03-featured-image-personal-x-template.jpg" alt="6 practical exercises to learn become a pro UI/UX designer" className="inline-block object-cover w-full max-w-full h-full align-middle border-0 box-border" />
                   </div>
                   <div className="px-6 pt-6 pb-12">
-                    <h3 className="mt-0 mb-5 text-2xl font-bold text-slate-900">
+                    <h3 className="mt-0 mb-5 text-2xl font-bold text-dh-dark">
                       6 practical exercises to learn become a pro UI/UX designer
                     </h3>
                     <div className="flex flex-wrap items-center box-border">

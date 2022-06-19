@@ -24,7 +24,7 @@ export function AboutMe() {
             <div
               className="ml-0 w-full opacity-100"
             >
-              <h2 className="mt-0 mb-6 text-4xl font-bold leading-6 text-slate-900">
+              <h2 className="mt-0 mb-6 text-4xl font-bold leading-6 text-dh-dark">
                 About me
               </h2>
               <p className="mt-0 mb-12">
