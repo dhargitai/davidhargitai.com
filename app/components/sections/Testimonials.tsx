@@ -7,7 +7,7 @@ export function Testimonials() {
   const [currentTestimonialSlide, setCurrentTestimonialSlide] = React.useState(0)
 
   return (
-    <div className="overflow-hidden pt-10 sm:pt-12 md:14 lg:pt-16 pb-20 font-medium leading-8 text-slate-500">
+    <div className="overflow-hidden pt-10 sm:pt-12 md:14 lg:pt-16 pb-20 font-medium leading-8 text-dh-dark-light">
         <div
           className="mx-auto flex-col items-stretch px-6 leading-8"
           style={{
@@ -72,7 +72,7 @@ export function Testimonials() {
                 >
                   <div className="flex flex-col-reverse lg:flex-row items-center justify-between rounded-3xl pt-6 pr-10 pb-16 pl-10">
                     <div
-                      className="mt-5 md:mt-8 lg:mt-16 mr-0 lg:mr-10 text-slate-500"
+                      className="mt-5 md:mt-8 lg:mt-16 mr-0 lg:mr-10 text-dh-dark-light"
                       style={{ maxWidth: "478px" }}
                     >
                       <p className="mt-0 mb-10 text-lg sm:text-xl md:text-2xl">
@@ -113,7 +113,7 @@ export function Testimonials() {
                 >
                   <div className="flex flex-col-reverse lg:flex-row items-center justify-between rounded-3xl pt-6 pr-10 pb-16 pl-10">
                     <div
-                      className="mt-5 md:mt-8 lg:mt-16 mr-0 lg:mr-10 text-slate-500"
+                      className="mt-5 md:mt-8 lg:mt-16 mr-0 lg:mr-10 text-dh-dark-light"
                       style={{ maxWidth: "478px" }}
                     >
                       <p className="mt-0 mb-10 text-lg sm:text-xl md:text-2xl">
@@ -156,7 +156,7 @@ export function Testimonials() {
                 >
                   <div className="flex flex-col-reverse lg:flex-row items-center justify-between rounded-3xl pt-6 pr-10 pb-16 pl-10">
                     <div
-                      className="mt-5 md:mt-8 lg:mt-16 mr-0 lg:mr-10 text-slate-500"
+                      className="mt-5 md:mt-8 lg:mt-16 mr-0 lg:mr-10 text-dh-dark-light"
                       style={{ maxWidth: "478px" }}
                     >
                       <p className="mt-0 mb-10 text-lg sm:text-xl md:text-2xl">

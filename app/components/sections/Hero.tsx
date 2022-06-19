@@ -2,14 +2,14 @@ import { Cta } from "~/components";
 
 export function Hero() {
   return (
-    <div className="pt-10 sm:pt-12 md:14 lg:pt-16 pb-20 font-medium leading-8 text-slate-500">
+    <div className="pt-10 sm:pt-12 md:14 lg:pt-16 pb-20 font-medium leading-8 text-dh-dark-light">
         <div
           className="text-center lg:text-left container-xl mx-auto flex-col items-stretch px-6 leading-8"
           style={{
             maxWidth: "1248px",
           }}
         >
-          <div className="flex-column lg:flex items-center justify-between text-slate-500">
+          <div className="flex-column lg:flex items-center justify-between text-dh-dark-light">
             <div
               style={{
                 transform:

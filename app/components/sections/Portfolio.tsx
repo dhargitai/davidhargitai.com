@@ -7,7 +7,7 @@ export function Portfolio() {
   const [currentPortfolioSlide, setCurrentPortfolioSlide] = React.useState(0)
 
   return (
-    <div className="overflow-hidden pt-10 sm:pt-12 md:14 lg:pt-16 pb-20 font-medium leading-8 text-slate-500">
+    <div className="overflow-hidden pt-10 sm:pt-12 md:14 lg:pt-16 pb-20 font-medium leading-8 text-dh-dark-light">
         <div
           className="mx-auto flex-col items-stretch px-6 leading-8"
           style={{
@@ -70,7 +70,7 @@ export function Portfolio() {
                       <div role="listitem" className="box-border">
                         {/* <a
                           href="#"
-                          className="box-border inline-block max-w-full cursor-pointer overflow-visible rounded-none bg-white hover:text-slate-500"
+                          className="box-border inline-block max-w-full cursor-pointer overflow-visible rounded-none bg-white hover:text-dh-dark-light"
                           style={{
                             transition: "color 300ms ease 0s",
                             textDecoration: "none",
@@ -129,7 +129,7 @@ export function Portfolio() {
                       >
                         {/* <a
                           href="#"
-                          className="box-border inline-block max-w-full cursor-pointer overflow-visible rounded-none bg-white hover:text-slate-500"
+                          className="box-border inline-block max-w-full cursor-pointer overflow-visible rounded-none bg-white hover:text-dh-dark-light"
                           tabIndex={-1}
                           aria-hidden="true"
                           style={{
@@ -195,7 +195,7 @@ export function Portfolio() {
                       >
                         {/* <a
                           href="#"
-                          className="box-border inline-block max-w-full cursor-pointer overflow-visible rounded-none bg-white hover:text-slate-500"
+                          className="box-border inline-block max-w-full cursor-pointer overflow-visible rounded-none bg-white hover:text-dh-dark-light"
                           tabIndex={-1}
                           aria-hidden="true"
                           style={{
@@ -270,7 +270,7 @@ export function Portfolio() {
                       >
                         {/* <a
                           href="#"
-                          className="box-border inline-block max-w-full cursor-pointer overflow-visible rounded-none bg-white hover:text-slate-500"
+                          className="box-border inline-block max-w-full cursor-pointer overflow-visible rounded-none bg-white hover:text-dh-dark-light"
                           tabIndex={-1}
                           aria-hidden="true"
                           style={{

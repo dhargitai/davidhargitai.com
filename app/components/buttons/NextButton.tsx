@@ -2,7 +2,7 @@ export function NextButton({ onClick, style, className }: { onClick?: () => void
   return (
     <div
       onClick={onClick}
-      className={`absolute z-10 mr-0 h-12 w-12 md:w-20 md:h-20 max-w-20 cursor-pointer select-none overflow-hidden bg-gray-100 text-2xl leading-4 text-dh-dark hover:bg-slate-900 hover:text-white left-0 right-0 top-0 bottom-0 ${className}`}
+      className={`absolute z-10 mr-0 h-12 w-12 md:w-20 md:h-20 max-w-20 cursor-pointer select-none overflow-hidden bg-gray-100 text-2xl leading-4 text-dh-dark hover:bg-dh-blue hover:text-white left-0 right-0 top-0 bottom-0 ${className}`}
       role="button"
       tabIndex={0}
       aria-controls="w-slider-mask-1"

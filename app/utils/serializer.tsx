@@ -8,7 +8,7 @@ import typescript from 'react-syntax-highlighter/dist/cjs/languages/prism/typesc
 import * as prism from "react-syntax-highlighter/dist/cjs/styles/prism";
 import { imageUrlFor } from '~/utils'
 import { getImageDimensions } from '@sanity/asset-utils'
-import { PortableTextComponentProps } from '@portabletext/react';
+import type { PortableTextComponentProps } from '@portabletext/react';
 
 SyntaxHighlighter.registerLanguage('javascript', javascript);
 SyntaxHighlighter.registerLanguage('json', jsonLang);
@@ -24,12 +24,12 @@ type Image = {
 }
 
 export const serializer = {
-  list: (props: { type?: string, children?: React.ReactNode }) => (props.type === "bullet" ? (
-    <ul className="list-disc overflow-hidden pl-12 mt-0 mb-12 text-slate-500">{props.children}</ul>
-  ) : props.type === "checkbox" ? (
-    <ul className="checklist overflow-hidden pl-12 mt-0 mb-12 text-slate-500">{props.children}</ul>
+  list: (props: { value: { listItem: string }, children?: React.ReactNode }) => (props?.value?.listItem === "bullet" ? (
+    <ul className="list-disc overflow-hidden pl-12 mt-0 mb-12 text-dh-dark-light">{props.children}</ul>
+  ) : props?.value?.listItem === "checkbox" ? (
+    <ul className="checklist overflow-hidden pl-12 mt-0 mb-12 text-dh-dark-light">{props.children}</ul>
   ) : (
-    <ol start={1} className="overflow-hidden pl-12 mt-0 mb-12 text-slate-500" style={{listStyle: 'outside none decimal'}}>{props.children}</ol>
+    <ol start={1} className="overflow-hidden pl-12 mt-0 mb-12 text-dh-dark-light" style={{listStyle: 'outside none decimal'}}>{props.children}</ol>
   )),
   listItem: (props: React.PropsWithChildren<PortableTextComponentProps<any>>) => <li className="mb-4 text-left">{props.children}</li>,
   types: {
@@ -62,6 +62,7 @@ export const serializer = {
                 // Avoid jumping around with aspect-ratio CSS property
                 aspectRatio: `${width} / ${height}`,
               }}
+              className="mx-auto"
             />
           </picture>
           <figcaption className="text-center italic">{caption}</figcaption>
@@ -73,6 +74,6 @@ export const serializer = {
     h2: ({ children }: { children?: React.ReactNode }) => <h2 className="text-4xl mt-10 mb-6 font-bold text-dh-dark">{children}</h2>,
     h3: ({ children }: { children?: React.ReactNode }) => <h3 className="text-2xl mt-10 mb-5 font-bold text-dh-dark">{children}</h3>,
     h4: ({ children }: { children?: React.ReactNode }) => <h4 className="text-xl mt-10 mb-4 font-bold text-dh-dark">{children}</h4>,
-    blockquote: ({ children }: { children?: React.ReactNode }) => <blockquote className="py-4 sm:py-7 md:py-10 px-8 sm:px-14 md:px-24 my-12 text-xl leading-7 text-center text-dh-dark-light bg-blue-50 rounded-3xl border-black italic">- {children}</blockquote>,
+    blockquote: ({ children }: { children?: React.ReactNode }) => <blockquote className="py-4 sm:py-7 md:py-10 px-8 sm:px-14 md:px-24 my-12 text-xl leading-7 text-center text-dh-dark bg-dh-yellow-lighter rounded-3xl border-dh-yellow-dark italic">- {children}</blockquote>,
   },
 };

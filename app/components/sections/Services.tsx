@@ -2,7 +2,7 @@ import { Cta } from "~/components";
 
 export function Services() {
   return (
-    <div className="pt-10 sm:pt-12 md:14 lg:pt-16 pb-20 font-medium leading-8 text-slate-500">
+    <div className="pt-10 sm:pt-12 md:14 lg:pt-16 pb-20 font-medium leading-8 text-dh-dark-light">
         <div
           className="clear-both mx-auto table flex-col items-stretch px-6 leading-8"
           style={{
@@ -23,7 +23,7 @@ export function Services() {
             I'd like to bring a lot of value to the world by doing what I love and helping others. Here are my current interests and learning paths:
             </p>
           </div>
-          <div className="relative mt-16 flex items-center justify-center text-slate-500">
+          <div className="relative mt-16 flex items-center justify-center text-dh-dark-light">
             <div
               className="md:grid"
               style={{

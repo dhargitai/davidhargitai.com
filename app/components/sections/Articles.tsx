@@ -1,6 +1,6 @@
 export function Articles() {
   return (
-    <div className="pt-10 sm:pt-12 md:14 lg:pt-16 pb-20 font-medium leading-8 text-slate-500">
+    <div className="pt-10 sm:pt-12 md:14 lg:pt-16 pb-20 font-medium leading-8 text-dh-dark-light">
         <div
           className="mx-auto flex-col items-stretch px-6 leading-8"
           style={{
@@ -17,7 +17,7 @@ export function Articles() {
             </h2>
             <a
               href="blog.html"
-              className="mb-6 cursor-pointer border-0 border-none bg-slate-900 py-6 px-16 text-center text-lg font-bold text-white hover:bg-white hover:text-dh-dark"
+              className="mb-6 cursor-pointer border-0 border-none bg-dh-blue py-6 px-16 text-center text-lg font-bold text-white hover:bg-white hover:text-dh-dark"
               style={{
                 textDecoration: "none",
                 borderRadius: "80px",
@@ -33,12 +33,12 @@ export function Articles() {
           >
             <div
               role="list"
-              className="mx-auto max-w-2xl lg:max-w-full flex flex-col lg:grid auto-cols-[1fr] grid-cols-3 gap-7 text-slate-500"
+              className="mx-auto max-w-2xl lg:max-w-full flex flex-col lg:grid auto-cols-[1fr] grid-cols-3 gap-7 text-dh-dark-light"
             >
               <div role="listitem" className="box-border">
                 {/* <a
                   href="#"
-                  className="box-border flex min-h-full max-w-full cursor-pointer flex-col overflow-hidden border border-solid border-zinc-200 bg-white hover:text-slate-500"
+                  className="box-border flex min-h-full max-w-full cursor-pointer flex-col overflow-hidden border border-solid border-zinc-200 bg-white hover:text-dh-dark-light"
                   style={{
                     transition: "color 300ms ease 0s",
                     textDecoration: "none",
@@ -76,7 +76,7 @@ export function Articles() {
               <div role="listitem" className="box-border">
                 {/* <a
                   href="#"
-                  className="box-border flex min-h-full max-w-full cursor-pointer flex-col overflow-hidden border border-solid border-zinc-200 bg-white hover:text-slate-500"
+                  className="box-border flex min-h-full max-w-full cursor-pointer flex-col overflow-hidden border border-solid border-zinc-200 bg-white hover:text-dh-dark-light"
                   style={{
                     transition: "color 300ms ease 0s",
                     textDecoration: "none",
@@ -113,7 +113,7 @@ export function Articles() {
               <div role="listitem" className="box-border">
                 {/* <a
                   href="#"
-                  className="box-border flex min-h-full max-w-full cursor-pointer flex-col overflow-hidden border border-solid border-zinc-200 bg-white hover:text-slate-500"
+                  className="box-border flex min-h-full max-w-full cursor-pointer flex-col overflow-hidden border border-solid border-zinc-200 bg-white hover:text-dh-dark-light"
                   style={{
                     transition: "color 300ms ease 0s",
                     textDecoration: "none",

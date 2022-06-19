@@ -2,7 +2,7 @@ import { Cta } from "~/components";
 
 export function AboutMe() {
   return (
-    <div className="pt-10 sm:pt-12 md:14 lg:pt-16 pb-20 font-medium leading-8 text-slate-500">
+    <div className="pt-10 sm:pt-12 md:14 lg:pt-16 pb-20 font-medium leading-8 text-dh-dark-light">
         <div
           className="clear-both mx-auto table items-stretch px-6 leading-8"
           style={{
@@ -11,7 +11,7 @@ export function AboutMe() {
             gridArea: "1 / 1 / 2 / 2",
           }}
         >
-          <div className="flex-col-reverse lg:flex-row flex gap-12 justify-between items-center text-slate-500">
+          <div className="flex-col-reverse lg:flex-row flex gap-12 justify-between items-center text-dh-dark-light">
             <div
               className="lg:w-1/2 overflow-hidden opacity-100"
             >

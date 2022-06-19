@@ -14,7 +14,7 @@ export function Cta({
   children?: React.ReactNode;
 }) {
   const attributes = {
-    className: `inline-block cursor-pointer border-0 border-none bg-slate-900 py-6 px-16 text-center text-lg font-bold text-white hover:bg-white hover:text-dh-dark ${className}`,
+    className: `inline-block cursor-pointer border-0 border-none bg-dh-blue py-6 px-16 text-center text-lg font-bold text-white hover:bg-white hover:text-dh-dark ${className}`,
     ...(onClick ? { onClick } : {}),
     ...(link ? { to: link } : {}),
     style: {

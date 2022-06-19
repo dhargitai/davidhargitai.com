@@ -67,3 +67,12 @@
   list-style: none;
   list-style-image: url(/images/checkmark.svg);
 }
+
+::-moz-selection {
+  /* color: red; */
+  background: #ffe07f;
+}
+::selection {
+  /* color: red; */
+  background: #ffe07f;
+}
