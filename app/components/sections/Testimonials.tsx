@@ -289,7 +289,7 @@ export function Testimonials() {
               </div>
             </div>
             <div
-              className="absolute left-auto right-auto top-0 bottom-0 -z-[1] -mt-7 w-full max-w-[80vw] md:max-w-4xl rounded-3xl bg-violet-50"
+              className="absolute left-auto right-auto top-0 bottom-0 -z-[1] -mt-7 w-full max-w-[80vw] md:max-w-4xl rounded-3xl bg-dh-sky-lighter"
               style={{ inset: "0% auto" }}
             />
           </div>

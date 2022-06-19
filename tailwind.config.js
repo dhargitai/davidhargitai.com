@@ -4,21 +4,24 @@ module.exports = {
     extend: {
       colors: {
         'dh-dark': {
-          light: '#808080',
+          lighter: '#808080',
           DEFAULT: '#2c2c2c',
-          dark: '#1a1a1a',
+          light: '#565656',
         },
         'dh-blue': {
+          lighter: '#b9d9ea',
           light: '#72b3d6',
           DEFAULT: '#1481BA',
           dark: '#0c4d70',
         },
         'dh-sky': {
+          lighter: '#b8e9f7',
           light: '#70d3ef',
           DEFAULT: '#11B5E4',
           dark: '#0a6d89',
         },
         'dh-yellow': {
+          lighter: '#fff0bf',
           light: '#ffe07f',
           DEFAULT: '#FFCC29',
           dark: '#997a19',

@@ -149,7 +149,7 @@ export function Articles() {
               </div>
 
               <div
-                className="my-5 flex-col border border-solid border-zinc-200 bg-white p-5 text-center text-gray-600"
+                className="my-5 flex-col border border-solid border-zinc-200 bg-white p-5 text-center text-dh-dark-light"
                 style={{ borderRadius: "18px" }}
               >
                 <div className="box-border">No items found.</div>

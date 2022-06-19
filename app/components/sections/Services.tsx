@@ -124,7 +124,7 @@ This is the most important skill of all. I want to meet and connect like-minded 
             </div>
 
             <div
-              className="absolute left-auto right-auto top-0 bottom-0 -z-[1] -mt-9 w-full max-w-4xl rounded-3xl bg-violet-50"
+              className="absolute left-auto right-auto top-0 bottom-0 -z-[1] -mt-9 w-full max-w-4xl rounded-3xl bg-dh-sky-lighter"
               style={{ minHeight: "116%", inset: "0% auto" }}
             />
           </div>

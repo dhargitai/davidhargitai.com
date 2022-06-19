@@ -108,7 +108,7 @@ export function Portfolio() {
                         </a> */}
                       </div>
                     </div>
-                    {/* <div className="flex-col p-5 my-5 text-gray-600 bg-white border border-solid border-zinc-200" style={{borderRadius: '18px'}}>
+                    {/* <div className="flex-col p-5 my-5 text-dh-dark-light bg-white border border-solid border-zinc-200" style={{borderRadius: '18px'}}>
                       <div className="box-border">No items found.</div>
                     </div> */}
                   </div>
@@ -244,7 +244,7 @@ export function Portfolio() {
                       </div>
                     </div>
                     <div
-                      className="my-5 flex-col border border-solid border-zinc-200 bg-white p-5 text-gray-600"
+                      className="my-5 flex-col border border-solid border-zinc-200 bg-white p-5 text-dh-dark-light"
                       aria-hidden="true"
                       style={{ borderRadius: "18px" }}
                     >
@@ -319,7 +319,7 @@ export function Portfolio() {
                       </div>
                     </div>
                     <div
-                      className="my-5 flex-col border border-solid border-zinc-200 bg-white p-5 text-gray-600"
+                      className="my-5 flex-col border border-solid border-zinc-200 bg-white p-5 text-dh-dark-light"
                       aria-hidden="true"
                       style={{ borderRadius: "18px" }}
                     >
